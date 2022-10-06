@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    overflow-x: hidden;
+    position: relative;
+}
+.container{
+    max-width: 1440px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header{
+    background-image: linear-gradient(to right, #CD0684,#3B5491);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    &__content{
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left-content{
+        height: 100%;
+        width: auto;
+        display: flex;
+        align-items: center;
+        gap: 65px;
+    }
+    &__image{
+        height: 55px;
+        width: 70px;
+    }
+    &__image:hover{
+        cursor: pointer;
+    }
+    &__left-content a{
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    &__left-content a:hover{
+        cursor: pointer;
+    }
+    &__logo-name{
+        font-family: 'Lato', sans-serif;
+    }
+    &__right-content{
+        height: 100%;
+        width: auto;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    &__search{
+        height: 32px;
+        width: 32px;
+    }
+    &__search:hover{
+        cursor: pointer;
+    }
+    &__right-content a{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+    }
+    &__right-content a:hover{
+        cursor: pointer;
+    }
+}
+.section{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    &__content{
+        display: flex;
+        gap:15px;
+    }
+
+    &__text{
+        font-size: 18px;
+        color: green;
+    }
+    &__text:hover{
+        cursor: pointer;
+    }
+    &__button{
+        background: #1877f2;
+        color: white;
+        font-size: 20px;
+        line-height: 48px;
+        border-radius: 6px;
+        padding: 0 16px;
+        width: auto;
+        border: none;
+    }
+    &__button:hover{
+        margin-left: 800px;
+    }
+
+}
