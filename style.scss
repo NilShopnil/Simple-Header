@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 body{
     overflow-x: hidden;
@@ -15,6 +14,9 @@ body{
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+.extra{
+    font-size: 40px;
 }
 .header{
     background-image: linear-gradient(to right, #CD0684,#3B5491);
@@ -34,7 +36,12 @@ body{
         width: auto;
         display: flex;
         align-items: center;
-        gap: 65px;
+        gap: 10px;
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
     &__image{
         height: 55px;
@@ -42,14 +49,28 @@ body{
     }
     &__image:hover{
         cursor: pointer;
+        height: 60px;
+        width: 75px;
     }
-    &__left-content a{
+    &__logo-name{
+        font-size: 25px;
+        text-decoration: none;
+        color: white;
+        font-family: 'Lato', sans-serif;
+    }
+    &__menu{
         color: white;
         text-decoration: none;
-        font-size: 15px;
+        font-size: 18px;
+        padding: 28px 35px;
+        
     }
-    &__left-content a:hover{
+    &__menu:hover{
         cursor: pointer;
+        font-size: 20px;
+        background-color: orange;
+        transition: 0.4s;
+        
     }
     &__logo-name{
         font-family: 'Lato', sans-serif;
@@ -67,12 +88,11 @@ body{
     }
     &__search:hover{
         cursor: pointer;
+        height: 40px;
+        width: 40px;
+        transition: 0.4s;
     }
-    &__right-content a{
-        text-decoration: none;
-        color: white;
-        font-size: 15px;
-    }
+    
     &__right-content a:hover{
         cursor: pointer;
     }
